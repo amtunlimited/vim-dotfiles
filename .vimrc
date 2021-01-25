@@ -1,13 +1,14 @@
 set nocompatible              " be iMproved, required
 filetype plugin on
-set rtp+=~\.vim
+set rtp+=~/.vim
+so ~/.vim/plugins.vim
 
 let mapleader = ','
 
 "Better editor"
 syntax enable
-set shiftwidth=5
-set softtabstop=5
+set shiftwidth=2
+set softtabstop=2
 set smartindent
 set number
 set linespace=15
@@ -32,7 +33,7 @@ set guioptions-=T
 set renderoptions=type:directx
 set encoding=utf-8
 
-set fillchars+=vert:\ 
+set fillchars+=vert:/ 
 "Make searching better"
 set hlsearch
 set incsearch
@@ -55,11 +56,11 @@ nmap <C-S-C>	    :tabc<cr>
 
 "Mappings"
 nmap <Leader>ev :tabedit $MYVIMRC<cr>		  "edit vimrc"
-nmap <Leader>ep :tabedit ~\.vim\plugins.vim<cr>	  "edit the plugins"
-nmap <Leader>es :e ~\.vim\snippets\
+nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>	  "edit the plugins"
+nmap <Leader>es :e ~/.vim/snippets/
 nmap <Leader>cs :nohlsearch<cr>			  "clear search"
 nmap <Leader>ct :tabclose<cr>			  "close the tab"
-nmap <Leader>sv :so ~\.vimrc<cr>		  "Source the VimRC file"
+nmap <Leader>sv :so ~/.vimrc<cr>		  "Source the VimRC file"
 nmap <Leader>pt :CtrlPTag<cr>
 
 "Plugin Config"
@@ -72,8 +73,7 @@ let NERDTreeHijackNetrw = 0
 nmap <S-T> :NERDTreeToggle<cr>
 
 "Other imports"
-so ~\.vim\plugins.vim
-so ~\.vim\laravel.vim
+so ~/.vim/laravel.vim
 
 "auto-commands"
 augroup autosourcerc
