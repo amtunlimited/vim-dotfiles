@@ -32,6 +32,10 @@ Plugin 'tpope/vim-repeat'
 
 Plugin 'rust-lang/rust.vim'
 
+"Lisp"
+Plugin 'vlime/vlime', {'rtp': 'vim/'}
+Plugin 'bhurlow/vim-parinfer'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
