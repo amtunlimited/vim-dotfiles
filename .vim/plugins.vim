@@ -12,11 +12,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'vim-airline/vim-airline'"
 
-"SnipMate and dependencies"
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-
 "Markdown stuff"
 Plugin 'junegunn/goyo.vim'
 Plugin 'godlygeek/tabular'
@@ -35,6 +30,9 @@ Plugin 'rust-lang/rust.vim'
 "Lisp"
 Plugin 'vlime/vlime', {'rtp': 'vim/'}
 Plugin 'bhurlow/vim-parinfer'
+
+"Go"
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
